@@ -13,6 +13,6 @@ This will:
 7. Copy the recovery and EFI partitions.
 
 It is recommended to re-run steps 6 and 7 once every year or so, as Windows Updates can update the RE and/or EFI partition files.
-Refreshing these two partitions can done by running the following:
+These two partitions cannot be mirrored, therefore they have to be refreshed manually by running the following:
 
 C:\> .\Set-BootMirror.ps1 -TargetDisk 1 -Phase SyncBoot
